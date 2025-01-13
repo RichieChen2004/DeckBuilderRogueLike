@@ -34,6 +34,10 @@ public class PlayerControl : MonoBehaviour
     private Card dashCard;
     private Card basicAttack; 
 
+    // Deck Inventory
+    private Card[] activeCards = new Card[5];
+    private List<Card> deck = new List<Card>();
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +51,7 @@ public class PlayerControl : MonoBehaviour
         currentMovSpeed = maxMovSpeed;
 
         dashCard = gameObject.AddComponent<BasicDash>();
-        // basicAttack = gameObject.AddComponent<BasicAttack>();
+        basicAttack = gameObject.AddComponent<BasicAttack>();
     }
 
     // Update is called once per frame

@@ -5,7 +5,8 @@ public class BasicDash : Card
 {
     [SerializeField] private float dashingPower = 20f; 
     [SerializeField] private float dashingTime = 0.2f; 
-    [SerializeField] private ParticleSystem trailEffect; 
+    // [SerializeField] private ParticleSystem trailEffect; 
+    // [SerializeField] private Sprite cardSpite; 
 
     public override void Use(PlayerControl player)
     {

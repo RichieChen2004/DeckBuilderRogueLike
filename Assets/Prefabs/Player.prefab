@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1117532878258307029}
   - component: {fileID: 1237977160842908313}
   - component: {fileID: 3294586804623602187}
-  - component: {fileID: 3126709518388596754}
   - component: {fileID: 5186947792884222039}
   - component: {fileID: 4493715724443125629}
   - component: {fileID: 2272336087240349943}
@@ -103,46 +102,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd92094f2147ae4d990ecc4a957fef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   animator: {fileID: 4493715724443125629}
   tr: {fileID: 2272336087240349943}
   maxHealth: 100
-  maxStamina: 100
   currentHealth: 0
-  currentStamina: 0
   healthBar: {fileID: 0}
-  staminaBar: {fileID: 0}
   maxMovSpeed: 6
   currentMovSpeed: 6
-  exhaustedMovSpeed: 4
-  dashingPower: 20
-  dashingTime: 0.2
-  dashingCooldown: 1
-  staminaRechargeRate: 60
-  stamRegenCooldown: 1
-  isExhausted: 0
---- !u!114 &3126709518388596754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7225331306710449331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d8ad4532d07fb349a9635f2f77f1fe1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPoint: {fileID: 4278823317216174255}
-  attackRange: 0.8
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 64
-  atkDmg: 40
-  pushForce: 5
-  attackAnimationPrefab: {fileID: 8662463006310444633, guid: 5d7df3e506942b143a8bced894abbd5f, type: 3}
+  facingRight: 0
+  isDashing: 0
+  attackPoint: {fileID: 0}
+  attackAnimationPrefab: {fileID: 0}
   attackRadius: 2
   isAttacking: 0
-  attackingTime: 0.25
+  canAttack: 1
 --- !u!50 &5186947792884222039
 Rigidbody2D:
   serializedVersion: 4
